@@ -61,6 +61,18 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +205,7 @@ body {
 
 .hero-contant-text {
   max-width: 425px;
-  margin: 32px 0 56px 0;
+  margin: 32px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -2477,5 +2489,10 @@ input:checked + .card-box .box-title {
 
   .footer-list-item:not(:last-child) {
     margin: 0 0 24px 0;
+  }
+}
+@media only screen and (max-width: 1165px) {
+  .choose-list__item::before {
+    margin-right: 20px;
   }
 }

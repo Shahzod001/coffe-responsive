@@ -276,9 +276,19 @@ a {
     border-radius: 10px;
   }
 
-  .quality__box {
+  .quality__box::before {
+    top: -15%;
+    left: 18%;
     width: 249px;
     height: 126px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .quality__box::before {
+    top: -10%;
+    left: 15%;
+    width: 219px;
+    height: 100px;
   }
 }
 @media only screen and (max-width: 1165px) {
